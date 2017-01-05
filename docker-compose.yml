@@ -1,0 +1,9 @@
+version: "2"
+services:
+  wiremock:
+    build:
+      context: .
+      args:
+        WIREMOCK_VERSION: 2.4.1
+    ports:
+      - 8080:8080
